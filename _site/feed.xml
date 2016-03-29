@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Beyond Ruby Basics</title>
+<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2016-03-29T16:54:28-04:00</updated>
+<id>/</id>
+<author>
+  <name>J.T. Jobe</name>
+  <uri>/</uri>
+  
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[Back to Basics]]></title>
+  <link rel="alternate" type="text/html" href="/back-to-basics/" />
+  <id>/back-to-basics</id>
+  <published>2016-03-29T00:00:00-04:00</published>
+  <updated>2016-03-29T00:00:00-04:00</updated>
+  <author>
+    <name>Billy Rick</name>
+    <uri></uri>
+    <email>billy@rick.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;It’s been about a year since I published my last blog post. Since then I’ve been busier than ever developing for Axon Tutors - an early stage start-up in Athens, GA with a small and dedicated development team.&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;/back-to-basics/&quot;&gt;Back to Basics&lt;/a&gt; was originally published by J.T. Jobe at &lt;a href=&quot;&quot;&gt;Beyond Ruby Basics&lt;/a&gt; on March 29, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+</feed>
