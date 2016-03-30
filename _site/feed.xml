@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-03-29T20:25:59-04:00</updated>
+<updated>2016-03-29T21:18:51-04:00</updated>
 <id>/</id>
 <author>
   <name>J.T. Jobe</name>
@@ -14,38 +14,26 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Back to Basics]]></title>
-  <link rel="alternate" type="text/html" href="/back-to-basics/" />
-  <id>/back-to-basics</id>
-  <published>2016-03-29T00:00:00-04:00</published>
-  <updated>2016-03-29T00:00:00-04:00</updated>
-  <author>
-    <name></name>
-    <uri></uri>
-    
-  </author>
-  <content type="html">
-    &lt;p&gt;It’s been about a year since I published my last blog post. Since then I’ve been busier than ever developing for Axon Tutors - an early stage start-up in Athens, GA with a small and dedicated development team.&lt;/p&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;/back-to-basics/&quot;&gt;Back to Basics&lt;/a&gt; was originally published by J.T. Jobe at &lt;a href=&quot;&quot;&gt;Beyond Ruby Basics&lt;/a&gt; on March 29, 2016.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[The Simplicity of Case Statements]]></title>
+  <title type="html"><![CDATA[Refactor Multi-Way Ifs with Case Statements for Readability]]></title>
   <link rel="alternate" type="text/html" href="/test-post/" />
   <id>/test-post</id>
-  <published>2016-03-01T00:00:00-05:00</published>
-  <updated>2016-03-01T00:00:00-05:00</updated>
+  <published>2016-03-29T00:00:00-04:00</published>
+  <updated>2016-03-29T00:00:00-04:00</updated>
   <author>
     <name>J.T. Jobe</name>
     <uri></uri>
     <email>jtjobe@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;This is just a test.&lt;/p&gt;
+    &lt;p&gt;If you’re not using case statements, you should be.&lt;/p&gt;
+
+&lt;p&gt;David Thomas, author of Programming Ruby, calls the case expression “a powerful beast: a multiway if on steroids”.&lt;/p&gt;
+
+&lt;p&gt;In less colorful words: anytime you have a long, messy if/else statement you might want to consider using a case expression instead.&lt;/p&gt;
+
+&lt;p&gt;Take the following three code snippets.&lt;/p&gt;
+
+&lt;h4 id=&quot;messy-ifelse-statement&quot;&gt;1) Messy If/Else Statement&lt;/h4&gt;
 
 &lt;noscript&gt;&lt;pre&gt;sports = %w{ football soccer basketball baseball volleyball }
 
@@ -65,6 +53,8 @@ end
 &lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/jtjobe/4f07f28dc7b28aadda137bf38598eb7a.js&quot;&gt; &lt;/script&gt;
 
+&lt;h4 id=&quot;refactored-with-case-statement&quot;&gt;2) Refactored with Case Statement&lt;/h4&gt;
+
 &lt;noscript&gt;&lt;pre&gt;sports = %w{ football soccer basketball baseball volleyball }
 
 case sports.sample
@@ -81,6 +71,8 @@ case sports.sample
 end&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/jtjobe/a5268be86f30a07d1d130724f7feeb3e.js&quot;&gt; &lt;/script&gt;
 
+&lt;h4 id=&quot;refactored-to-one-line-expressions&quot;&gt;3) Refactored to One-Line Expressions&lt;/h4&gt;
+
 &lt;noscript&gt;&lt;pre&gt;sports = %w{ football soccer basketball baseball volleyball }
 
 case sports.sample
@@ -92,8 +84,15 @@ case sports.sample
 end&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/jtjobe/a7945c4836514208e76ef5f42dcd2dbd.js&quot;&gt; &lt;/script&gt;
 
+&lt;h2 id=&quot;simple-but-powerful&quot;&gt;Simple but Powerful&lt;/h2&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/test-post/&quot;&gt;The Simplicity of Case Statements&lt;/a&gt; was originally published by J.T. Jobe at &lt;a href=&quot;&quot;&gt;Beyond Ruby Basics&lt;/a&gt; on March 01, 2016.&lt;/p&gt;
+&lt;p&gt;The code above is simple enough that quickly making sense of what’s happening in the multiway if isn’t all that difficult. However, in more complex use cases this same refactoring can be the difference between easy to read self-documenting code and an unclear mess that takes extra time to decipher.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Thomas, David. Programming Ruby. Raleigh, N.C.: Pragmatic Bookshelf, 2005.&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/test-post/&quot;&gt;Refactor Multi-Way Ifs with Case Statements for Readability&lt;/a&gt; was originally published by J.T. Jobe at &lt;a href=&quot;&quot;&gt;Beyond Ruby Basics&lt;/a&gt; on March 29, 2016.&lt;/p&gt;
   </content>
 </entry>
 

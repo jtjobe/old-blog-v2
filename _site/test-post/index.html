@@ -5,14 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>The Simplicity of Case Statements &#8211; Beyond Ruby Basics</title>
-<meta name="description" content="Use case statements to make complex if/else chains more readable">
+<title>Refactor Multi-Way Ifs with Case Statements for Readability &#8211; Beyond Ruby Basics</title>
+<meta name="description" content="Use case statements to make multiway if/else expressions more readable">
 <meta name="keywords" content="">
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="The Simplicity of Case Statements">
-<meta name="twitter:description" content="Use case statements to make complex if/else chains more readable">
+<meta name="twitter:title" content="Refactor Multi-Way Ifs with Case Statements for Readability">
+<meta name="twitter:description" content="Use case statements to make multiway if/else expressions more readable">
 <meta name="twitter:site" content="@jtjobe">
 <meta name="twitter:creator" content="@jtjobe">
 
@@ -22,8 +22,8 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The Simplicity of Case Statements">
-<meta property="og:description" content="Use case statements to make complex if/else chains more readable">
+<meta property="og:title" content="Refactor Multi-Way Ifs with Case Statements for Readability">
+<meta property="og:description" content="Use case statements to make multiway if/else expressions more readable">
 <meta property="og:url" content="/test-post/">
 <meta property="og:site_name" content="Beyond Ruby Basics">
 
@@ -86,12 +86,6 @@
 		<nav id="site-nav" class="nav">
 		    <ul>
 		        
-				    
-				    <li><a href="/about/" >About</a></li>
-				
-				    
-				    <li><a href="/posts/" >Posts</a></li>
-				
 		    </ul>
 		</nav>
 	</div><!-- /.top-navigation -->
@@ -111,7 +105,7 @@
 
 
   <h3 itemprop="name">J.T. Jobe</h3>
-  <p>Software developer with a solid foundation in Ruby. When not typing, my hands are plucking strings, tending the garden or narrowly avoiding spinning metal teeth.</p>
+  <p>Software developer with a solid foundation in Ruby. When not typing, my hands are usually busy plucking strings, tending the garden or narrowly avoiding spinning metal teeth.</p>
   <a href="mailto:jtjobe@gmail.com" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
   <a href="http://twitter.com/jtjobe" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
   
@@ -138,11 +132,19 @@
   <article class="post">
     <div class="headline-wrap">
       
-        <h1><a href="/test-post/" rel="bookmark" title="The Simplicity of Case Statements">The Simplicity of Case Statements</a></h1>
+        <h1><a href="/test-post/" rel="bookmark" title="Refactor Multi-Way Ifs with Case Statements for Readability">Refactor Multi-Way Ifs with Case Statements for Readability</a></h1>
       
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <p>This is just a test.</p>
+      <p>If you’re not using case statements, you should be.</p>
+
+<p>David Thomas, author of Programming Ruby, calls the case expression “a powerful beast: a multiway if on steroids”.</p>
+
+<p>In less colorful words: anytime you have a long, messy if/else statement you might want to consider using a case expression instead.</p>
+
+<p>Take the following three code snippets.</p>
+
+<h4 id="messy-ifelse-statement">1) Messy If/Else Statement</h4>
 
 <noscript><pre>sports = %w{ football soccer basketball baseball volleyball }
 
@@ -162,6 +164,8 @@ end
 </pre></noscript>
 <script src="https://gist.github.com/jtjobe/4f07f28dc7b28aadda137bf38598eb7a.js"> </script>
 
+<h4 id="refactored-with-case-statement">2) Refactored with Case Statement</h4>
+
 <noscript><pre>sports = %w{ football soccer basketball baseball volleyball }
 
 case sports.sample
@@ -178,6 +182,8 @@ case sports.sample
 end</pre></noscript>
 <script src="https://gist.github.com/jtjobe/a5268be86f30a07d1d130724f7feeb3e.js"> </script>
 
+<h4 id="refactored-to-one-line-expressions">3) Refactored to One-Line Expressions</h4>
+
 <noscript><pre>sports = %w{ football soccer basketball baseball volleyball }
 
 case sports.sample
@@ -189,6 +195,13 @@ case sports.sample
 end</pre></noscript>
 <script src="https://gist.github.com/jtjobe/a7945c4836514208e76ef5f42dcd2dbd.js"> </script>
 
+<h2 id="simple-but-powerful">Simple but Powerful</h2>
+
+<p>The code above is simple enough that quickly making sense of what’s happening in the multiway if isn’t all that difficult. However, in more complex use cases this same refactoring can be the difference between easy to read self-documenting code and an unclear mess that takes extra time to decipher.</p>
+
+<ol>
+  <li>Thomas, David. Programming Ruby. Raleigh, N.C.: Pragmatic Bookshelf, 2005.</li>
+</ol>
 
       <hr />
       <footer role="contentinfo">
@@ -206,7 +219,7 @@ end</pre></noscript>
     </li>
   </ul>
 </div><!-- /.social-share -->
-        <p class="byline"><strong>The Simplicity of Case Statements</strong> was published on <time datetime="2016-03-01T00:00:00-05:00">March 01, 2016</time>.</p>
+        <p class="byline"><strong>Refactor Multi-Way Ifs with Case Statements for Readability</strong> was published on <time datetime="2016-03-29T00:00:00-04:00">March 29, 2016</time>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   
@@ -215,21 +228,10 @@ end</pre></noscript>
 
 <div class="footer-wrap">
   
-  <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="/posts/">View all posts</a>)</small></h4>
-    <ul>
-    
-      <li><a href="/back-to-basics/" title="Back to Basics">Back to Basics</a></li>
-    
-    </ul>
-    <hr />
-  </div><!-- /.related-articles -->
-  
   <footer>
     
 
 <span>&copy; 2016 J.T. Jobe. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> theme.</span>
-
   </footer>
 </div><!-- /.footer-wrap -->
 
