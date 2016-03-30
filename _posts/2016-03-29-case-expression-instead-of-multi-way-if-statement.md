@@ -3,17 +3,17 @@ layout: post
 title: "Refactor Multi-Way Ifs with Case Statements for Readability"
 author: me
 modified:
-excerpt: "Use case statements to make multiway if/else expressions more readable"
+excerpt: "Use case expressions in place of messy if/else statements for readable, self-documenting code"
 tags: []
 ---
 
 If you're not using case statements, you should be. 
 
-David Thomas, author of Programming Ruby, calls the case expression "a powerful beast: a multiway if on steroids".
+David Thomas, author of Programming Ruby, calls the case expression "a powerful beast: a multiway if on steroids" (1).
 
 In less colorful words: anytime you have a long, messy if/else statement you might want to consider using a case expression instead.
 
-Take the following three code snippets.
+Take the following three code snippets:
 
 #### 1) Messy If/Else Statement
 
@@ -29,7 +29,7 @@ Take the following three code snippets.
 
 ## Simple but Powerful
 
-The code above is simple enough that quickly making sense of what's happening in the multiway if isn't all that difficult. However, in more complex use cases this same refactoring can be the difference between easy to read self-documenting code and an unclear mess that takes extra time to decipher.
+The code above is simple enough that quickly making sense of what's happening in the multiway if isn't difficult. However, in more complex use cases this same refactoring can be the difference between easy to read self-documenting code and an unclear mess that takes extra time to decipher.
 
 
 

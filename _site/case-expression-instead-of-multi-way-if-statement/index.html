@@ -24,7 +24,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Refactor Multi-Way Ifs with Case Statements for Readability">
 <meta property="og:description" content="Use case expressions in place of messy if/else statements for readable, self-documenting code">
-<meta property="og:url" content="/test-post/">
+<meta property="og:url" content="/case-expression-instead-of-multi-way-if-statement/">
 <meta property="og:site_name" content="Beyond Ruby Basics">
 
 <meta property="og:image" content="/images/default-thumb.png">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="/test-post/">
+<link rel="canonical" href="/case-expression-instead-of-multi-way-if-statement/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Beyond Ruby Basics Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -132,7 +132,7 @@
   <article class="post">
     <div class="headline-wrap">
       
-        <h1><a href="/test-post/" rel="bookmark" title="Refactor Multi-Way Ifs with Case Statements for Readability">Refactor Multi-Way Ifs with Case Statements for Readability</a></h1>
+        <h1><a href="/case-expression-instead-of-multi-way-if-statement/" rel="bookmark" title="Refactor Multi-Way Ifs with Case Statements for Readability">Refactor Multi-Way Ifs with Case Statements for Readability</a></h1>
       
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
@@ -146,7 +146,23 @@
 
 <h4 id="messy-ifelse-statement">1) Messy If/Else Statement</h4>
 
-<p>true<script src="https://gist.github.com/jtjobe/4f07f28dc7b28aadda137bf38598eb7a.js"> </script></p>
+<noscript><pre>sports = %w{ football soccer basketball baseball volleyball }
+
+game = sports.sample
+
+if game == &#39;football&#39;
+  puts &quot;touchdown&quot;
+elsif game == &#39;soccer&#39;
+  puts &quot;goal&quot;
+elsif game == &#39;basketball&#39;
+  puts &quot;basket&quot;
+elsif game == &#39;baseball&#39;
+  puts &quot;run&quot;
+elsif game == &quot;volleyball&quot;
+  puts &quot;point&quot;
+end
+</pre></noscript>
+<script src="https://gist.github.com/jtjobe/4f07f28dc7b28aadda137bf38598eb7a.js"> </script>
 
 <h4 id="refactored-with-case-statement">2) Refactored with Case Statement</h4>
 
@@ -193,13 +209,13 @@ end</pre></noscript>
   <h4>Share on</h4>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text=/test-post/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://twitter.com/intent/tweet?text=/case-expression-instead-of-multi-way-if-statement/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=/test-post/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/case-expression-instead-of-multi-way-if-statement/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="https://plus.google.com/share?url=/test-post/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+      <a href="https://plus.google.com/share?url=/case-expression-instead-of-multi-way-if-statement/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
     </li>
   </ul>
 </div><!-- /.social-share -->
