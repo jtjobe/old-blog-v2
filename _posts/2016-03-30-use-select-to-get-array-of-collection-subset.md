@@ -3,7 +3,7 @@ layout: post
 title: "Use Select to Get Array of Collection Subset"
 author: me
 modified:
-excerpt: "test post"
+excerpt:
 tags: []
 ---
 
